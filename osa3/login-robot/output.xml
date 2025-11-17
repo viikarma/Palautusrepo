@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.14.0 on win32)" generated="20251117 23:53:58.608" rpa="false" schemaversion="4">
+<suite id="s1" name="Register" source="C:\Users\viivi\koulu\teka3003\palautusrepo\osa3\login-robot\src\tests\register.robot">
+<test id="s1-t1" name="Register With Valid Username And Password" line="6">
+<kw name="Input New Command" library="resource" type="SETUP">
+<kw name="Input" library="AppLibrary">
+<arg>new</arg>
+<status status="PASS" starttime="20251117 23:53:58.667" endtime="20251117 23:53:58.667"/>
+</kw>
+<status status="PASS" starttime="20251117 23:53:58.667" endtime="20251117 23:53:58.668"/>
+</kw>
+<kw name="Input" library="AppLibrary">
+<arg>kalle</arg>
+<status status="PASS" starttime="20251117 23:53:58.668" endtime="20251117 23:53:58.668"/>
+</kw>
+<kw name="Input" library="AppLibrary">
+<arg>kalle@123</arg>
+<status status="PASS" starttime="20251117 23:53:58.669" endtime="20251117 23:53:58.669"/>
+</kw>
+<kw name="Run Application" library="AppLibrary">
+<status status="PASS" starttime="20251117 23:53:58.669" endtime="20251117 23:53:58.670"/>
+</kw>
+<kw name="Output Should Contain" library="AppLibrary">
+<arg>User created successfully</arg>
+<msg timestamp="20251117 23:53:58.670" level="FAIL">Output "User created successfully" is not in ['New user registered']</msg>
+<status status="FAIL" starttime="20251117 23:53:58.670" endtime="20251117 23:53:58.671"/>
+</kw>
+<status status="FAIL" starttime="20251117 23:53:58.666" endtime="20251117 23:53:58.671">Output "User created successfully" is not in ['New user registered']</status>
+</test>
+<status status="FAIL" starttime="20251117 23:53:58.610" endtime="20251117 23:53:58.672"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Register">Register</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
